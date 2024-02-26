@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 That how the app of week 01 looks like :
-- (readmeAssets/week1.mov)
+  [![Watch the video](https://i.stack.imgur.com/Vp2cE.png)](readmeAssets/week1.mov)
 
 This project is a starting point for a Flutter application.
 
