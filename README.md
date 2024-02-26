@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 That how the app of week 01 looks like :
-- [Screen Recording](readmeAssets/week1.mov)
+- (readmeAssets/week1.mov)
 
 This project is a starting point for a Flutter application.
 
