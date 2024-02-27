@@ -9,13 +9,13 @@ class ContainerFullScreenWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         alignment: Alignment.center,
-        margin: EdgeInsets.all(20),
-        padding: EdgeInsets.all(10),
+        margin: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-            color: colors, borderRadius: BorderRadius.circular(10)),
+            color: colors,
+            borderRadius: BorderRadius.circular(10)),
         child: Text(
           "This is a $title Screen",
-          style: TextStyle(fontSize: 16, color: Colors.white),
+          style: const TextStyle(fontSize: 16, color: Colors.white),
         ));
   }
 }
