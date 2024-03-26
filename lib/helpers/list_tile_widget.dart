@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class ListTileWidget extends StatelessWidget {
-  const ListTileWidget({Key? key, required this.title, required this.navigation}) : super(key: key);
+  const ListTileWidget({super.key, required this.title, required this.navigation, required this.tileColor});
   final String title;
+  final Color? tileColor;
   final Widget navigation;
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      tileColor: tileColor,
       title: Text(title, style: const TextStyle(
           fontSize: 18,
           letterSpacing: 2,

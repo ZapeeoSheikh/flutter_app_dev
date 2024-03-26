@@ -21,6 +21,9 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget{
             letterSpacing: 2,
             color: Colors.white),
       ),
+      actions: const [
+        Image(image: AssetImage("assets/images/gcu_logo.png"), width: 40, height: 40,)
+      ],
     );
   }
 

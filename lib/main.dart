@@ -1,31 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app_dev/view/dashboard/dashboard_screen.dart';
+import 'package:mobile_app_dev/utils/routes/route_paths.dart';
+import 'package:provider/provider.dart';
+
+import 'data/repository/http_helper.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const StartupApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class StartupApp extends StatelessWidget {
+  const StartupApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Mobile App Dev - Semester 08',
-      debugShowCheckedModeBanner: false,
-      home: Startup(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => HttpHelper()),
+      ],
+      child: MaterialApp(
+        title: 'Mobile App Dev - Semester 08',
+        debugShowCheckedModeBanner: false,
+        routes: routes,
+        initialRoute: "/",
+      ),
     );
   }
 }
 
-class Startup extends StatelessWidget {
-  const Startup({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: DashboardPage(),
-    );
-  }
-}
