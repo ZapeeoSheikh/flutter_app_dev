@@ -144,6 +144,29 @@ class _DashboardPageState extends State<DashboardPage> {
                             ],
                           ),
                           const Spacer(),
+                          Row(
+                            children: [
+                              Text(
+                                "LAT: ${value.lat}",
+                                style: const TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.white,
+                                    letterSpacing: 3),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "LON: ${value.lon}",
+                                style: const TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.white,
+                                    letterSpacing: 3),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 8,),
                           ElevatedButton(
                               onPressed: () {
                                 value.reInit();
