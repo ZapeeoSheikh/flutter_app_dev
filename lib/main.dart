@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app_dev/utils/routes/route_paths.dart';
 import 'package:provider/provider.dart';
-
 import 'data/repository/http_helper.dart';
 
 void main() {
